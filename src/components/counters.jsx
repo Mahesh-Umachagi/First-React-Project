@@ -12,6 +12,7 @@ class Counters extends Component {
   render() {
     return (
       <div>
+      <h1>First React Project</h1>
         {this.state.counters.map(counter => (
           <Counter key={counter.id} />
         ))}
