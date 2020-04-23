@@ -13,6 +13,12 @@ class Counter extends Component {
   render() {
     return (
       <div className="container">
+        <button
+          onClick={this.handleReset}
+          className="btn btn-primary btn-sm m-2"
+        >
+          Reset
+        </button>
         <span style={{ fontSize: 35 }} className="badge badge-primary m-2">
           {this.formatCount()}
         </span>
